@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CSC317LeapYearInClass.MainPage">
+
+    <VerticalStackLayout>
+        <Label Text="Input the year below and I will tell you if its a leap year." 
+               HorizontalTextAlignment="Center"
+               Margin="20"
+               MaximumWidthRequest="550"
+               FontSize="25"
+               Padding="10"
+               
+               />
+        <Entry 
+            x:Name="txtInput"
+            Placeholder="Enter Year here"
+            Margin="20"
+            MaximumWidthRequest="550"
+            />
+        <Button Text="Find Out"
+                Clicked="DetermineLeapYear"
+                MaximumWidthRequest="150"
+                />
+        <Label Text="Result"
+               x:Name="lblResult"
+                HorizontalTextAlignment="Center"
+                 Margin="20"
+                 MaximumWidthRequest="550"
+                 FontSize="25"
+                 Padding="10"
+               />
+    </VerticalStackLayout>
+
+    
+</ContentPage>
